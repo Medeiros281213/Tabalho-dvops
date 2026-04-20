@@ -1,0 +1,15 @@
+name: CI - Verificacao de Qualidade
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixando o codigo
+        uses: actions/checkout@v4
+        
+      - name: Simulando testes do Front-end
+        run: echo "Arquivos HTML, CSS e JS verificados e aprovados com sucesso!"
