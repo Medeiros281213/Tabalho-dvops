@@ -1,0 +1,15 @@
+name: CD - Deploy Continuo
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixando o codigo atualizado
+        uses: actions/checkout@v4
+        
+      - name: Simulando o Deploy
+        run: echo "Deploy da Lista de Tarefas realizado com sucesso no ambiente de producao!"
