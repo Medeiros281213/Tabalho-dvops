@@ -1,1 +1,14 @@
-{"name":"tabalho-dvops","version":"1.0.0","description":"Projeto simples desenvolvido para prática de Git e GitHub (DevOps).","main":"script.js","directories":{"test":"tests"},"scripts":{"test":"jest"},"repository":{"type":"git","url":"git+https://github.com/Medeiros281213/Tabalho-dvops.git"},"keywords":[],"author":"","license":"ISC","type":"commonjs","bugs":{"url":"https://github.com/Medeiros281213/Tabalho-dvops/issues"},"homepage":"https://github.com/Medeiros281213/Tabalho-dvops#readme","devDependencies":{"jest":"^30.3.0"}}
+{
+  "name": "trabalho-dvops",
+  "version": "1.0.0",
+  "description": "Projeto simples para prática de CI",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
