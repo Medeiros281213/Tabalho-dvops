@@ -1,21 +1,23 @@
-const { criarItem, limparInput } = require('../script');
+const { criarItem } = require("../script");
 
-test('Não cria item vazio', () => {
-  expect(criarItem("")).toBe(null);
+test("Não cria item vazio", () => {
+  expect(criarItem("")).toBeNull();
 });
 
-test('Cria item válido', () => {
-  expect(criarItem("Tarefa")).toBe("Tarefa");
+test("Cria item válido", () => {
+  const item = criarItem("Estudar");
+
+  expect(item).toBeDefined();
+  expect(item.texto).toBe("Estudar");
+  expect(item.concluido).toBe(false);
 });
 
-test('Limpa input', () => {
-  expect(limparInput()).toBe("");
+test("Remove espaços vazios", () => {
+  expect(criarItem("   ")).toBeNull();
 });
 
-test('Criar item retorna texto correto', () => {
-  expect(criarItem("Estudar")).toBe("Estudar");
-});
+test("Retorna objeto correto", () => {
+  const item = criarItem("Teste");
 
-test('Criar item mantém valor', () => {
-  expect(criarItem("Teste")).toEqual("Teste");
+  expect(typeof item).toBe("object");
 });
