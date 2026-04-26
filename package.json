@@ -1,7 +1,7 @@
 {
   "name": "trabalho-dvops",
   "version": "1.0.0",
-  "description": "Projeto simples para prática de CI",
+  "description": "Projeto simples com CI e testes",
   "main": "script.js",
   "scripts": {
     "test": "jest"

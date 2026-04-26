@@ -12,15 +12,13 @@ jobs:
       - name: Baixar código
         uses: actions/checkout@v3
 
-      - name: Instalar Node
+      - name: Configurar Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
       - name: Instalar dependências
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install
+        run: npm install
 
       - name: Rodar testes
         run: npx jest
