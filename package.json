@@ -1,14 +1,12 @@
 {
-  "name": "trabalho-dvops",
+  "name": "tabalho-dvops",
   "version": "1.0.0",
-  "description": "Projeto simples com CI e testes",
+  "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "jest"
+    "test": "npx jest"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "jest": "^29.0.0"
+    "jest": "^30.0.0"
   }
 }
