@@ -10,3 +10,4 @@ Projeto simples desenvolvido para prática de Git e GitHub (DevOps).
 - HTML
 - CSS
 - JavaScript
+Teste CI funcionando
