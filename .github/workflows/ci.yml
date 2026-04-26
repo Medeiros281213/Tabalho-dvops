@@ -1,15 +1,26 @@
-name: CI - Verificacao de Qualidade
+name: CI - Testes Unitários
 
 on:
-  pull_request:
-    branches: [ "main" ]
+pull_request:
+branches: [ "main" ]
 
 jobs:
-  testes:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Baixando o codigo
-        uses: actions/checkout@v4
-        
-      - name: Simulando testes do Front-end
-        run: echo "Arquivos HTML, CSS e JS verificados e aprovados com sucesso!"
+testes:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Baixar código
+    uses: actions/checkout@v3
+
+  - name: Instalar Node
+    uses: actions/setup-node@v3
+    with:
+      node-version: 18
+
+  - name: Instalar dependências
+    run: npm install
+
+  - name: Rodar testes
+    run: npm test
+```

@@ -10,3 +10,13 @@ console.log("Sistema iniciado");
   lista.appendChild(li);
   input.value = "";
 }
+function criarItem(texto) {
+  if (texto === "") return null;
+  return texto;
+}
+
+function limparInput() {
+  return "";
+}
+
+module.exports = { criarItem, limparInput };
